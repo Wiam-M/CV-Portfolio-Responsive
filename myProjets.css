@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+*{
+    color: blanchedalmond; 
+    font-family: 'Lato', sans-serif; 
+    text-transform: uppercase;
+}
+body{
+    background-color: rgb(36, 35, 35);
+    width: 100%; 
+}
+table{
+    border-collapse: collapse;
+    margin: 7% 15%;
+    width:70%;
+  }
+th{
+      background-color: black;
+      font-size: 1.4em;
+  }
+  
+  th, td{
+    border: 1px solid blanchedalmond;
+    padding: 25px;
+    text-align: center;
+  }
+
+a{
+    text-decoration: none;
+    font-size: 1.2;
+}
+td:hover{
+    background-color: grey;
+}

@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+*{
+    color: blanchedalmond; 
+    font-family: 'Lato', sans-serif; 
+    text-transform: uppercase;
+}
+body{
+    background-color: rgb(36, 35, 35);
+    width: 100%; 
+}
+form{
+    margin: 7% 25%;
+    width: 40%;
+    height: 350px;
+    text-decoration: none;
+}
+legend{
+    background-color: black;
+    margin-bottom:0px;
+  margin-left:16px;
+}
+li{
+    margin: 30px;
+}
+button{
+    color: blanchedalmond;
+    background-color: rgb(36, 35, 35);
+    padding: 5px;
+}
+input{
+    color: rgb(36, 35, 35);
+}
+textarea{
+    color: rgb(36, 35, 35);
+}
+

@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+/*le * prend en compt tous le HTML*/
+*{
+    margin: 0px;
+    padding: 0px;
+    color: blanchedalmond;
+    font-family: 'Lato', sans-serif;
+}
+body{
+    background-color: rgb(36, 35, 35);
+}
+nav{
+    width: 100%;
+    margin: 0px auto 40px auto; 
+    position: sticky;
+    top: 0px;
+}
+nav ul{
+    list-style-type: none;
+    display: flex;
+}
+nav li{
+    width: 25%;/*100% divisé par le nombre d'éléments de menu*/
+    text-align: center;/*Centre le texte dans les éléments de menu*/
+}
+nav ul::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+nav a{
+    display: block; /*Toute la surface sera cliquable*/
+    text-decoration: none;
+    color: blanchedalmond;
+    border-bottom: 2px solid transparent;/*Evite le décalage des éléments sous le menu à cause de la bordure en :hover*/
+    padding: 10px 0px;/*Agrandit le menu et espace la bordure du texte*/
+    text-transform: uppercase;
+}
+
+nav a:hover{
+    color: rgb(116, 110, 100);
+    border-bottom: 2px solid blanchedalmond;
+}
+section{
+    margin: 10% auto;
+    width: 70%;
+}
+article{
+    border: 1px solid blanchedalmond;
+    background-color: rgb(36, 35, 35);
+}
+article img{
+    display: none;
+}
+
+.titreUn{
+    color: blanchedalmond;
+    font-size: 1.4em;
+    padding: 3%;
+    text-align: center;
+    text-transform: uppercase;
+    border-bottom: 1px solid blanchedalmond;
+    background-color: black;
+}
+p{
+ margin: 10px;
+ text-align: center; 
+line-height: 2em;
+}
+.infos{
+    display: flex;
+    justify-content: space-around;
+    line-height: 3em;
+    width: 100%;
+}
+.infos a{
+    text-decoration: none;
+}
+.experience{
+    line-height: 1.3em;
+    margin: 5% auto;
+}
+.experience ul li{
+    margin: 2% 5%;
+}
+.outils{
+    display: flex;
+    justify-content: space-around;
+    line-height: 3em;
+    text-transform: uppercase;
+    font-size: 1.3em;
+}
+.outils ul li{
+    list-style: none;
+}
+.disparaitre{
+    display: none;
+}
+.checked{
+    color: rgb(190, 136, 65);
+}
+.star{
+    position: relative;
+    left: -10px;
+    top: -5%;
+    display: flex;
+}
+
+@media screen and (max-width: 900px)
+{
+    section{
+        margin: 10% auto;
+        width: 90%;
+    }
+    .container{
+        width: 100%;
+        margin: 0;
+    }
+    nav{
+        display: none;
+    }
+    .picture{
+        display: block;
+        width: 20%;
+    }
+   #experienceContenu,#formationContenu, #competenceContenu{
+        display: block;
+        margin-top: 5%;
+    }
+    .items{
+        display: flex;
+    }
+}
+@media screen and (max-width: 650px){
+    .items{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .items,p{
+        text-align: justify;
+        margin-left: 2%;
+    }
+    .picture{
+        width: 50%;
+        display: flex;
+        justify-content: center;
+    }
+    .infos{
+        flex-direction: column; 
+        margin: auto 5%; 
+    }
+    ul{
+        list-style: none;
+    }    
+}
